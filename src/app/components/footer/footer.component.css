@@ -1,0 +1,43 @@
+.pie-pagina{
+    padding: 20px 0;
+    
+}
+
+.fa-facebook{
+    font-size: 24px;
+    color:rgb(67, 110, 228);
+    }
+.fa-facebook:hover{
+   opacity: 0.5;
+    }
+
+.fa-twitter{
+    font-size: 24px;
+    color:rgb(134, 190, 243);
+
+}
+.fa-twitter:hover{
+    opacity: 0.5;
+
+}
+
+.fa-instagram{
+    font-size: 24px;
+    color:rgb(242, 117, 176);
+
+}
+.fa-instagram:hover{
+    opacity: 0.5;
+
+}
+
+.fa-youtube{
+    font-size: 24px;
+    color:rgb(240, 146, 146);
+
+}
+.fa-youtube:hover{
+    opacity: 0.5;
+
+}
+

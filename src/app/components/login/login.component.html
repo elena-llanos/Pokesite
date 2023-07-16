@@ -1,0 +1,15 @@
+<div class="container d-flex justify-content-center">
+
+    <form #loginForm="ngForm" class="d-flex flex-column" autocomplete="off" (ngSubmit)="login()">
+        <mat-form-field>
+            <mat-label>Usuario</mat-label>
+            <input matInput type="text" name="usuario" required placeholder="Introduzca Usuario" [(ngModel)]="admin.usuario">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput type="password" name="password" required placeholder="Introduzca Contraseña" [(ngModel)]="admin.password">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.form.valid">LogIn</button>
+
+    </form>
+</div>

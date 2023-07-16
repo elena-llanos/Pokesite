@@ -1,0 +1,18 @@
+<app-preloader *ngIf="!estadoCarga"></app-preloader>
+<div>
+    <h3>Nombre del Pokemon: {{elPokemon.name}}</h3>
+
+    <h5>Peso: {{elPokemon.weight / 10 }} kilos</h5>
+    <div>
+
+        <img src="{{elPokemon.sprites?.other.home.front_shiny}}" alt="" width="300px">
+    </div>
+
+    <h5>Juegos en los que interviene</h5>
+
+    <div class="d-flex flex-wrap justify-content-between gap-2">
+        <div class="juego d-flex justify-content-center align-items-center"
+            *ngFor="let juegos of elPokemon.game_indices">{{juegos.version.name}}</div>
+    </div>
+    <h5>Línea evolutiva</h5>
+</div>

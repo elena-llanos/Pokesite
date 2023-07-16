@@ -1,0 +1,28 @@
+<div class="d-flex flex-wrap justify-content-between">
+    <div class="card mb-5 puntero-link" style="width: 12rem;" *ngFor="let pokemon of aPokemons"
+        [routerLink]="['/detail' , pokemon.id]">
+        <img src="{{pokemon.urlImages}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title ">{{pokemon.name}}</h5>
+            <!-- <h5 class="card-title">{{pokemon.id}}</h5> -->
+
+            <!-- <a href="#" class="btn btn-secondary">Ver detalle</a> -->
+        </div>
+    </div>
+
+
+    <div>
+        <mat-paginator #paginator
+        class="demo-paginator"
+        (page)="onPaginateChange($event)"
+        [length]="length"
+        [pageSize]="pageSize"
+        [disabled]="disabled"
+        [showFirstLastButtons]="showFirstLastButtons"
+        [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+        [hidePageSize]="hidePageSize"
+        [pageIndex]="pageIndex"
+        aria-label="Select page">
+</mat-paginator>
+    </div>
+</div>
